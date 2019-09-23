@@ -1,0 +1,42 @@
+\hypertarget{_escultor3_d_8cpp}{}\doxysection{Referência do Arquivo Escultor3\+D.\+cpp}
+\label{_escultor3_d_8cpp}\index{Escultor3D.cpp@{Escultor3D.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}Escultor3\+D.\+h\char`\"{}}\newline
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_escultor3_d_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Funções}
+\mbox{\Hypertarget{_escultor3_d_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_escultor3_d_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{Escultor3D.cpp@{Escultor3D.cpp}!main@{main}}
+\index{main@{main}!Escultor3D.cpp@{Escultor3D.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{246           \{}
+\DoxyCodeLine{247     \textcolor{keywordtype}{char}* documento = \textcolor{stringliteral}{"Projeto01"};}
+\DoxyCodeLine{248     \mbox{\hyperlink{class_sculptor}{Sculptor}} desenho(20,20,20);}
+\DoxyCodeLine{249     desenho.setColor(0.5,0,0,0.5);}
+\DoxyCodeLine{250     desenho.putVoxel(18,18,18);}
+\DoxyCodeLine{251     desenho.cutVoxel(0,0,0);}
+\DoxyCodeLine{252     desenho.setColor(0,0.5,0,0.5);}
+\DoxyCodeLine{253     desenho.putBox(0,8,0,8,0,8);}
+\DoxyCodeLine{254     desenho.cutBox(0,1,0,1,0,1);}
+\DoxyCodeLine{255     desenho.setColor(0,0,0.5,0.5);}
+\DoxyCodeLine{256     desenho.putSphere(10,10,10,5);}
+\DoxyCodeLine{257     desenho.cutSphere(9,9,9,4);}
+\DoxyCodeLine{258     desenho.setColor(0.5,0,0.5,0.5);}
+\DoxyCodeLine{259     desenho.putEllipsoid(15,15,15,2,4,1);}
+\DoxyCodeLine{260     desenho.cutEllipsoid(16,16,16,1,1,1);}
+\DoxyCodeLine{261     desenho.writeOFF(documento);}
+\DoxyCodeLine{262     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{263 \}}
+
+\end{DoxyCode}
